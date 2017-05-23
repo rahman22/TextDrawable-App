@@ -20,17 +20,14 @@ dependencies {
 
 ####5. Built-in color generator:
 
-ColorGenerator generator = ColorGenerator.MATERIAL; // or use DEFAULT
-
-// generate random color
+```java
+ColorGenerator generator = ColorGenerator.MATERIAL;
 
 int color1 = generator.getRandomColor();
 
-// generate color based on a key (same key returns the same color), useful for list/grid views
 
 int color2 = generator.getColor("user@gmail.com")
 
-// declare the builder object once.
 
 TextDrawable.IBuilder builder = TextDrawable.builder()
 				.beginConfig()
@@ -38,10 +35,10 @@ TextDrawable.IBuilder builder = TextDrawable.builder()
 				.endConfig()
 				.rect();
 
-// reuse the builder specs to create multiple drawables
 TextDrawable ic1 = builder.build("A", color1);
-
 TextDrawable ic2 = builder.build("B", color2);
+```
+#### Screenshot
 
 <p align="center">
   <img src="https://cloud.githubusercontent.com/assets/28509637/25785463/644b347e-339a-11e7-940b-05a353b6597a.png" width="350"/>
