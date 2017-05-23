@@ -1,4 +1,4 @@
-##TextDrawable-App
+# Overview
 This light-weight library provides images with letter/text like the Gmail app. It extends the Drawable class thus can be used with existing/custom/network ImageView classes
 
 ### Import with Gradle:
@@ -31,7 +31,7 @@ int color2 = generator.getColor("user@gmail.com")
 
 TextDrawable.IBuilder builder = TextDrawable.builder()
 				.beginConfig()
-					.withBorder(4)
+				.withBorder(4)
 				.endConfig()
 				.rect();
 
